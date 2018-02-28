@@ -13,7 +13,7 @@ $(document).ready(function (){
    // console.log(blue,green,red,orange);
 
     var totalScore = 0;
-    var kitten = 0;
+    var finalScore = 0;
     var win = 0;
     var loss = 0;
 
@@ -25,14 +25,14 @@ $(document).ready(function (){
 
     function reset(){
 
-        var randomNumber = Math.floor(Math.random()*102 + 19);
+        randomNumber = Math.floor(Math.random()*102 + 19);
         $("#randm").text(randomNumber);
     
          blue = Math.floor(Math.random() * 12 + 1);
          green = Math.floor(Math.random() * 12 + 1);
          red = Math.floor(Math.random() * 12 + 1);
          orange = Math.floor(Math.random() * 12 + 1);
-    
+        finalScore = 0;
         totalScore = 0;
         $("#score").html(" Your score is : " + totalScore);
     }
@@ -50,14 +50,14 @@ $(document).ready(function (){
 
     $("#blue").on('click',function(){
 
-        kitten = totalScore += blue;
-        console.log("kitten = " + kitten);
-        $("#score").html(" Your score is : " + kitten);
+        finalScore = totalScore += blue;
+        console.log("finalScore = " + finalScore);
+        $("#score").html(" Your score is : " + finalScore);
 
-        if(kitten === randomNumber){
+        if(finalScore === randomNumber){
             userWin();
             reset();
-        }else if(kitten > randomNumber){
+        }else if(finalScore > randomNumber){
             userLoss();
             reset();
         }
@@ -65,14 +65,14 @@ $(document).ready(function (){
 
     $("#green").on('click',function(){
 
-        kitten = totalScore += green;
-        console.log(totalScore);
-        $("#score").html(" Your score is : " + kitten);
+        finalScore = totalScore += green;
+      //  console.log(totalScore);
+        $("#score").html(" Your score is : " + finalScore);
 
-        if(kitten === randomNumber){
+        if(finalScore === randomNumber){
             userWin();
             reset();
-        }else if(kitten > randomNumber){
+        }else if(finalScore > randomNumber){
             userLoss();
             reset();
         }
@@ -80,14 +80,14 @@ $(document).ready(function (){
 
     $("#red").on('click',function(){
 
-        kitten = totalScore += red;
-        console.log(totalScore);
-        $("#score").html(" Your score is : " + kitten);
+        finalScore = totalScore += red;
+     //   console.log(totalScore);
+        $("#score").html(" Your score is : " + finalScore);
 
-        if(kitten === randomNumber){
+        if(finalScore === randomNumber){
             userWin();
             reset();
-        }else if(kitten > randomNumber){
+        }else if(finalScore > randomNumber){
             userLoss();
             reset();
         }
@@ -95,14 +95,14 @@ $(document).ready(function (){
 
     $("#orange").on('click',function(){
 
-        kitten = totalScore += orange;
-        console.log(totalScore);
-        $("#score").html(" Your score is : " + kitten);
+        finalScore = totalScore += orange;
+     //   console.log(totalScore);
+        $("#score").html(" Your score is : " + finalScore);
 
-        if(kitten === randomNumber){
+        if(finalScore === randomNumber){
             userWin();
             reset();
-        }else if(kitten > randomNumber){
+        }else if(finalScore > randomNumber){
             userLoss();
             reset();
         }
