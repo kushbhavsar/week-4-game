@@ -13,6 +13,7 @@ $(document).ready(function (){
    // console.log(blue,green,red,orange);
 
     var totalScore = 0;
+    var kitten = 0;
     var win = 0;
     var loss = 0;
 
@@ -39,64 +40,71 @@ $(document).ready(function (){
     function userWin(){
         win++;
         $("#win").html(" Win : " + win);
-        reset();
+       
     }
     
     function userLoss(){
         loss++;
         $("#loss").html(" Loss : "+ loss);
-        reset();
     }
 
     $("#blue").on('click',function(){
 
-        totalScore = totalScore + blue;
-        console.log(totalScore);
-        $("#score").html(" Your score is : " + totalScore);
+        kitten = totalScore += blue;
+        console.log("kitten = " + kitten);
+        $("#score").html(" Your score is : " + kitten);
 
-        if(totalScore === randomNumber){
+        if(kitten === randomNumber){
             userWin();
-        }else if(totalScore > randomNumber){
+            reset();
+        }else if(kitten > randomNumber){
             userLoss();
+            reset();
         }
-    });
+    })
 
     $("#green").on('click',function(){
 
-        totalScore = totalScore + green;
+        kitten = totalScore += green;
         console.log(totalScore);
-        $("#score").html(" Your score is : " + totalScore);
+        $("#score").html(" Your score is : " + kitten);
 
-        if(totalScore === randomNumber){
+        if(kitten === randomNumber){
             userWin();
-        }else if(totalScore > randomNumber){
+            reset();
+        }else if(kitten > randomNumber){
             userLoss();
+            reset();
         }
-    });
+    })
 
     $("#red").on('click',function(){
 
-        totalScore = totalScore + red;
+        kitten = totalScore += red;
         console.log(totalScore);
-        $("#score").html(" Your score is : " + totalScore);
+        $("#score").html(" Your score is : " + kitten);
 
-        if(totalScore === randomNumber){
+        if(kitten === randomNumber){
             userWin();
-        }else if(totalScore > randomNumber){
+            reset();
+        }else if(kitten > randomNumber){
             userLoss();
+            reset();
         }
-    });
+    })
 
     $("#orange").on('click',function(){
 
-        totalScore = totalScore + orange;
+        kitten = totalScore += orange;
         console.log(totalScore);
-        $("#score").html(" Your score is : " + totalScore);
+        $("#score").html(" Your score is : " + kitten);
 
-        if(totalScore === randomNumber){
+        if(kitten === randomNumber){
             userWin();
-        }else if(totalScore > randomNumber){
+            reset();
+        }else if(kitten > randomNumber){
             userLoss();
+            reset();
         }
     });
 });
