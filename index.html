@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 id="label">Crystal Collector</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                You will be given a random number at the start of the game.<br><br>There are four crystals below. By clicking on a crystal you wil
+                add a specific amount of pints to your total score.<br><br> You win the game by matching your total score to random number, you lose
+                the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it.
+                <br><br> Each time when the game starts, the game will change the value of each crystal. 
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="assets/images/blue.jpg" alt="blueDimond" id="blue">
+            <img src="assets/images/green.jpg" alt="blueDimond" id="green">
+            <img src="assets/images/red.jpg" alt="blueDimond" id="red">
+            <img src="assets/images/orange.jpg" alt="blueDimond" id="orange">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2 id="randm">
+
+            </h2>
+        </div>
+        <div class="col-md-3">
+            <h3 id="win">Win : </h3>
+        </div>
+        <div class="col-md-3">
+                <h3 id="loss">Loss : </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 id="score">
+                Your score is :
+            </h3>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

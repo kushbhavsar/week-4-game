@@ -1,0 +1,39 @@
+.container{
+    background-image: url("../Homework/week-4-game/assets/images/background.jpg");
+}
+#label{
+   background-color: brown;
+   padding: 10px;
+   text-align: center;
+   color: whitesmoke;
+   font-weight: bold;
+
+}
+p{
+    background-color: bisque;
+    padding: 40px;
+    color: green;
+}
+img{
+    float: left;
+    height:170px;
+    width: 40%;
+}
+#randm{
+    padding: 40px;
+    width: 50%;
+    background-color: darkcyan;
+    text-align: center;
+    color: bisque;
+}
+h3{
+    padding: 30px;
+    width: 100%;
+    background-color: aquamarine;
+}
+#score{
+    padding: 30px;
+    width: 50%;
+    background-color: rgb(74, 150, 74);
+    color: whitesmoke;
+}
